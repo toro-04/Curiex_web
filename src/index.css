@@ -1,0 +1,254 @@
+@import "tailwindcss";
+
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .ipad-pro_cards {
+    font-size: 18px;
+    padding: 20px;
+  }
+  .ipad-pro_about{
+     left:40px;
+  }
+  .ipad-pro_height_about{
+    height: 100vh;
+  }
+  .ipad-pro_hidden_keyobj{
+     width:18vh;
+     height:13vh;
+  }
+  .ipad-pro_allign_keyobj{
+    width:100px;
+    
+  }
+  .ipad-pro_height_service{
+    height:80vh;
+  }
+  .ipad-pro_allign_service{
+    width:900px;
+  }
+  .ipad-pro_height_contact{
+    height: 70vh;
+    
+  }
+  .ipad-pro_elements_align{
+    margin-left: 0px;
+  }
+  .ipad-pro_height_reasons{
+    height:90vh;
+  }
+  .ipad-pro_elements_align_reasons{
+    margin-top:20px;
+    margin-left:1300px;
+    margin-bottom:600px;
+    
+  }
+  .ipad-pro_elements_align_reasons_2{
+    margin-right:441px;
+  }
+  .ipad_flip-card{
+    width: 280px;
+    height: 220px;
+  }
+
+  .ipad_flip-card-front, .ipad_flip-card-back {
+    border-width: 2px;
+    border-radius: 40px;
+    padding: 1rem;
+  }
+  
+  .ipad_flip-card.flipped {
+    min-height: 220px;
+  }
+  
+  .ipad_flip-cards-container{
+    gap: 1rem;
+  }
+
+} 
+html{
+  overflow-x:hidden;
+}
+
+body{
+  background-color: white;
+  margin-top: -7px;
+}
+
+.noOverFlowH{
+  overflow-x: clip;
+  
+}
+
+.arc {
+  --a: 240deg; /* control the progression */
+  
+  width: 300px;
+  aspect-ratio: 1;
+  padding: 40px; /* the boder thickness */
+  box-sizing: border-box;
+  border-radius: 50%;
+  mask:
+    linear-gradient(#0000 0 0) content-box intersect,
+    conic-gradient(#000 var(--a),#0000 0);
+}
+
+.arcM {
+  --a: 240deg; /* control the progression */
+  
+  width: 300px;
+  aspect-ratio: 1;
+  padding: 40px; /* the boder thickness */
+  box-sizing: border-box;
+  border-radius: 50%;
+  background: #DB9F2F;
+  mask:
+    linear-gradient(#0000 0 0) content-box intersect,
+    conic-gradient(#000 var(--a),#0000 0);
+}
+
+.arcP {
+  --a: 300deg; /* control the progression */
+  
+  width: 250px;
+  aspect-ratio: 1;
+  padding: 40px; /* the boder thickness */
+  box-sizing: border-box;
+  border-radius: 50%;
+  background: #4A4F8D;
+  mask:
+    linear-gradient(#0000 0 0) content-box intersect,
+    conic-gradient(#000 var(--a),#0000 0);
+}
+.black{
+  background-color:black;
+}
+
+.purpspecial{
+  
+  width: 100%;
+  height: 70px; /* Thickness */
+  background-color: #DB9F2F;
+  z-index:1;
+  clip-path: polygon(0px 100px, 100vw 80px, 119vw 100%, 0px 0%);
+}
+.custom-border {
+  border:#4A4F8D; 
+  box-shadow: 
+    inset 5px 5px 0px 0px #4A4F8D,    /* Top-left corner */
+    inset -5px 5px 0px 0px #4A4F8D,   /* Top-right corner */
+    inset 5px -5px 0px 0px #4A4F8D,   /* Bottom-left corner */
+    inset -5px -5px 0px 0px #4A4F8D;  /* Bottom-right corner */
+  padding: 20px;
+  border-radius: 35px; /*round edges*/
+}
+
+.imgTran{
+  mix-blend-mode: multiply;
+}
+
+.purp{
+  background-color: #4A4F8D;
+  
+}
+.lightblue{
+  background-color: #747cf9;
+}
+
+.purpBorder{
+  border-color:#4A4F8D;
+  
+}
+.purpColor{
+  color:#4A4F8D;
+}
+
+.must{
+  background-color: #DB9F2F;
+}
+
+.mustColor{
+  color:#DB9F2F;
+}
+.mustBorder{
+  border-color:#DB9F2F;
+}
+
+/*CARD SECTION */
+
+.flip-card {
+  position: relative;
+  width: 400px;
+  height: 250px; 
+  transform-style: preserve-3d;
+  isolation: isolate;
+}
+
+.flip-card-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.9s;
+  transform-style: preserve-3d;
+  transform-origin: center;
+  top: 0;
+  left: 0;
+}
+
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-width:3px;
+  border-radius: 68px;
+  border-color:#4A4F8D;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: #111827;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  
+  top: 0;
+  left: 0;
+}
+
+.flip-card-front {
+  transform: rotateY(0deg);
+  z-index: 2;
+  color:white;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  height: auto;
+  min-height: 100%;
+}
+
+
+.flip-card.flipped {
+  height: auto;
+  min-height: 250px;
+}
+
+.flip-card.flipped .flip-card-back {
+  height: auto;
+  z-index: 1;
+}
+
+
+.flip-cards-container {
+  perspective: 1500px;
+  perspective-origin: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  
+}
