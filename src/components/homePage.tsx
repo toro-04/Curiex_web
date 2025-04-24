@@ -27,7 +27,7 @@ const HomePage = () => {
         : fullText.substring(0, text.length + 1)
       );
 
-      setTypingSpeed(isDeleting ? 75 : 150);
+      setTypingSpeed(isDeleting ? 60 : 70);
 
       if (!isDeleting && text === fullText) {
         setTimeout(() => setIsDeleting(true), 1500);
@@ -50,7 +50,7 @@ const HomePage = () => {
       
       <div className="z-10 text-center px-4 max-w-4xl">
         <div className="flex items-center justify-center mb-8">
-          <h1 className="text-8xl font-bold font-mono bg-clip-text text-transparent bg-gradient-to-r from-[#A4B5C4] to-[#4B6382]">
+          <h1 className="text-8xl font-bold font-mono bg-clip-text text-transparent bg-gradient-to-r from-[#5483B3] to-[#052659]">
             CURIEX
           </h1>
         </div>
@@ -64,8 +64,8 @@ const HomePage = () => {
         </div>
         
         <div className="mt-16">
-          <button className="bg-[#4B6382] hover:bg-[#4B6382] text-[#071739] hover:text-[#CDD5DB] font-bold py-3 px-8 rounded-md transition-all duration-300 transform hover:scale-105 text-lg">
-            Explore
+          <button className="bg-[#4B6382] hover:bg-[#4B6382] text-[white] font-bold py-3 px-8 rounded-md transition-all duration-300 transform hover:scale-105 text-lg">
+           <a href='#about'> Explore </a>
           </button>
         </div>
       </div>
