@@ -21,7 +21,7 @@ const NavBar: React.FC = () => {
   return (
     <nav className={`sticky top-0 z-50 transition-all duration-300 ${scrolled ? 'py-2' : 'py-4'}`}>
       <div className="max-w-full  px-4 ">
-        <div className={`${scrolled ? 'bg-black/80' : 'bg-black'} backdrop-blur-lg  rounded-3xl shadow-lg `}>
+        <div className={`${scrolled ? 'bg-black/80' : 'bg-black'} rounded-3xl shadow-lg `}>
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center justify-between px-6 py-3">
             <div className="flex items-center space-x-3">
