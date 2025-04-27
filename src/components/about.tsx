@@ -78,7 +78,7 @@ const About: React.FC = () => {
     <div className="min-h-screen grid grid-cols-1 md:grid-cols-3 gap-6 bg-black-800 text-white p-8">
       {/* About Us */}
       <div className="flex flex-col items-center justify-center">
-        <h1 className="text-4xl font-bold text-blue-400 mb-4 text-center">About Us</h1>
+        <h1 className="text-4xl font-bold font-mono bg-clip-text text-transparent bg-gradient-to-r from-[#5483B3] to-[#052659] text-blue-400 mb-4 text-center">About Us</h1>
         <p className="text-gray-200 text-lg text-center mb-4">
           Founded on {societyInfo.foundedYear}, our society has been at the forefront of innovation.<br />
           {societyInfo.description}
