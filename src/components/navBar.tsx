@@ -36,6 +36,9 @@ const NavBar: React.FC = () => {
               <a href="#aboutus" className="text-[#CDD5DB] hover:text-white transition duration-300 border-b-2 border-transparent hover:border-[#4B6382]">
                 About
               </a>
+              <a href="#event" className="py-3 text-[#CDD5DB] hover:text-white border-b border-[#071739]/20 transition duration-300">
+                Events
+              </a>
               <a href="#contact" className="px-4 py-2 bg-gradient-to-r from-[#071739] to-[#4B6382] text-[#CDD5DB] rounded-md hover:from-[#4B6382] hover:to-[#071739] transition-all duration-300 shadow-md">
                 Contact Us
               </a>
@@ -77,8 +80,8 @@ const NavBar: React.FC = () => {
               <a href="#aboutus" className="py-3 text-[#CDD5DB] hover:text-white border-b border-[#071739]/20 transition duration-300">
                 About
               </a>
-              <a href="#promoters" className="py-3 text-[#CDD5DB] hover:text-white border-b border-[#071739]/20 transition duration-300">
-                Promoters
+              <a href="#event" className="py-3 text-[#CDD5DB] hover:text-white border-b border-[#071739]/20 transition duration-300">
+                Events
               </a>
               <a href="#contact" className="my-3 py-2 bg-gradient-to-r from-[#071739] to-[#4B6382] text-[#CDD5DB] rounded-md text-center hover:opacity-90 transition duration-300">
                 Contact Us

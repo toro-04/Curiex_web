@@ -71,7 +71,7 @@ const EventsPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-black to-gray-900 text-gray-100">
+    <div id="event"className="min-h-screen bg-gradient-to-b from-black to-gray-900 text-gray-100">
       <div className="relative h-64 overflow-hidden">
         <div id="particles-js" className="absolute inset-0"></div>
         <div className="relative flex flex-col items-center justify-center h-full text-center px-4">
