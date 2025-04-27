@@ -2,6 +2,7 @@ import './App.css'
 import HomePage from './components/homePage'
 import NavBar from './components/navBar'
 import EventsPage from './components/Eventspage'
+import ContactPage from './components/contactus'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <NavBar/>
       <HomePage/>
       <EventsPage/>
+      <ContactPage/>
     </div>
     </>
   )
