@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import {Link} from 'react-router-dom'
 
 const quotes = [
   "Code is like humor. When you have to explain it, it's bad.",
@@ -64,9 +65,11 @@ const HomePage = () => {
         </div>
         
         <div className="mt-16">
+          <Link to="/about">
           <button className="bg-[#4B6382] hover:bg-[#4B6382] text-[white] font-bold py-3 px-8 rounded-md transition-all duration-300 transform hover:scale-105 text-lg">
-           <a href='#about'> Explore </a>
+            Explore
           </button>
+          </Link>
         </div>
       </div>
       

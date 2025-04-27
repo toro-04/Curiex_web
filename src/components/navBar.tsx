@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Code } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const NavBar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,12 +31,12 @@ const NavBar: React.FC = () => {
             </div>
             
             <div className="flex items-center space-x-8">
-              <a href="#home" className="text-[#CDD5DB] hover:text-white transition duration-300 border-b-2 border-transparent hover:border-[#4B6382]">
+              <Link to="/" className="text-[#CDD5DB] hover:text-white transition duration-300 border-b-2 border-transparent hover:border-[#4B6382]">
                 Home
-              </a>
-              <a href="#aboutus" className="text-[#CDD5DB] hover:text-white transition duration-300 border-b-2 border-transparent hover:border-[#4B6382]">
+              </Link>
+              <Link to="/about" className="text-[#CDD5DB] hover:text-white transition duration-300 border-b-2 border-transparent hover:border-[#4B6382]">
                 About
-              </a>
+              </Link>
               <a href="#contact" className="px-4 py-2 bg-gradient-to-r from-[#071739] to-[#4B6382] text-[#CDD5DB] rounded-md hover:from-[#4B6382] hover:to-[#071739] transition-all duration-300 shadow-md">
                 Contact Us
               </a>
@@ -71,12 +72,12 @@ const NavBar: React.FC = () => {
         {isMenuOpen && (
           <div className="md:hidden bg-black/90 backdrop-blur-md border border-[#4B6382]/30 rounded-b-lg shadow-lg mt-1 overflow-hidden">
             <div className="flex flex-col px-4 py-2">
-              <a href="#home" className="py-3 text-[#CDD5DB] hover:text-white border-b border-[#071739]/20 transition duration-300">
+              <Link to="/" className="py-3 text-[#CDD5DB] hover:text-white border-b border-[#071739]/20 transition duration-300">
                 Home
-              </a>
-              <a href="#aboutus" className="py-3 text-[#CDD5DB] hover:text-white border-b border-[#071739]/20 transition duration-300">
+              </Link>
+              <Link to="/about" className="py-3 text-[#CDD5DB] hover:text-white border-b border-[#071739]/20 transition duration-300">
                 About
-              </a>
+              </Link>
               <a href="#promoters" className="py-3 text-[#CDD5DB] hover:text-white border-b border-[#071739]/20 transition duration-300">
                 Promoters
               </a>
