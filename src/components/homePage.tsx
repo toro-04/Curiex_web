@@ -42,7 +42,7 @@ const HomePage = () => {
   }, [text, isDeleting, loopNum, typingSpeed]);
 
   return (
-    <div className="min-h-screen bg-black flex flex-col items-center justify-center">
+    <div id="home" className="min-h-screen bg-black flex flex-col items-center justify-center">
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
         <div className="absolute top-0 right-0 w-64 h-64 bg-[#4B6382] rounded-full opacity-10 blur-3xl"></div>
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#052659] rounded-full opacity-10 blur-3xl"></div>
