@@ -97,15 +97,7 @@ const EventsPage: React.FC = () => {
                   id={`event-container-${event.id}`}
                   className={`relative ${index % 2 === 0 ? 'md:pr-3 md:text-left md:ml-112 md:translate-x-[120px]' : 'md:text-right md:mr-auto md:ml-1/2'} md:w-1/2 md:translate-x-[-8px]`}
                 >
-                  {/* Timeline circle with unique ID */}
-                  <div 
-                    id={`timeline-circle-${event.id}`}
-                    className={`absolute w-4 h-4 rounded-full border-4 border-[#4B6382] bg-black transform 
-                      ${index % 2 === 0 
-                        ? 'md:translate-x-[-9px] md:translate-y-[55px]' 
-                        : 'md:translate-y-[49px] md:translate-x-[456px]'
-                      } left-[-8px]`}
-                  ></div>
+                 
                   
                   {/* Event card with unique ID */}
                   <div 
