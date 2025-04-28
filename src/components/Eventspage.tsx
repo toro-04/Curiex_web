@@ -145,7 +145,7 @@ const EventsPage: React.FC = () => {
                         </p>
                         
                         {/* Expanded content */}
-                        <div className={`overflow-hidden transition-all duration-300 ease-in-out ${expandedEvent == event.id? 'max-h-96 opacity-100 mt-4':'max-h-0 opacity-0'}`}>
+                        <div className={`overflow-hidden transition-all duration-550 ease-in-out ${expandedEvent == event.id? 'max-h-96 opacity-100 mt-4':'max-h-0 opacity-0'}`}>
                           <div className="mt-4 space-y-4 text-left ease-in">
                             <p className="text-[#CDD5DB]">{event.description}</p>
                             <div className="flex items-center gap-2 text-sm text-gray-400">
