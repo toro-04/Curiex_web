@@ -102,19 +102,19 @@ const About: React.FC = () => {
   return (
     <div id="about" className="bg-black text-white py-12 px-0">
       {/* Top: About Us and Mission */}
-      <div className="max-w-6xl mx-auto mb-12">
-        <h1 className="text-4xl font-bold font-mono bg-clip-text text-transparent bg-gradient-to-r from-[#5483B3] to-[#052659] mb-4 text-center">About Us</h1>
+      <div className=" mx-auto mb-12">
+        <h1 className="text-5xl font-bold font-mono bg-clip-text text-transparent bg-gradient-to-r from-[#5483B3] to-[#052659] mb-4 text-center">ABOUT US</h1>
         <p className="text-gray-200 text-lg text-center mb-4">
           Founded on {societyInfo.foundedYear}, our society has been at the forefront of innovation.<br />
           {societyInfo.description}
         </p>
-        <hr/>
-        <h2 className="text-3xl font-bold font-mono bg-clip-text text-transparent bg-gradient-to-r from-[#5483B3] to-[#052659] mb-2 text-center font-bold">Our Mission</h2>
-        <p className="text-gray-200 text-base text-center">{societyInfo.mission}</p>
+        
+        <h2 className="text-4xl font-bold font-mono bg-clip-text text-transparent bg-gradient-to-r from-[#5483B3] to-[#052659] mb-2 text-center font-bold mt-12">OUR MISSION</h2>
+        <p className="text-gray-200 text-lg text-center">{societyInfo.mission}</p>
       </div>
 
       {/* Grid: Faculty Members (left) | Core Team (right) */}
-      <div className="max-w-3x1 mx-8 grid grid-cols-1 md:grid-cols-2 gap-30">
+      <div className=" mx-8 grid grid-cols-1 md:grid-cols-2 gap-30">
         {/* Faculty Members */}
         <div>
           <h2 className="text-2xl font-semibold text-blue-300 mb-4 text-center md:text-center">Faculty Members</h2>
