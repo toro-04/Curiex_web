@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import {Link} from 'react-router-dom'
+import About from './about';
 
 const quotes = [
   "Code is like humor. When you have to explain it, it's bad.",
@@ -43,6 +43,7 @@ const HomePage = () => {
   }, [text, isDeleting, loopNum, typingSpeed]);
 
   return (
+    <>
     <div className="min-h-screen bg-black flex flex-col items-center justify-center">
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
         <div className="absolute top-0 right-0 w-64 h-64 bg-[#4B6382] rounded-full opacity-10 blur-3xl"></div>
@@ -65,13 +66,14 @@ const HomePage = () => {
         </div>
         
         <div className="mt-16">
-          <Link to="/about">
+          <a href="#about">
           <button className="bg-[#4B6382] hover:bg-[#4B6382] text-[white] font-bold py-3 px-8 rounded-md transition-all duration-300 transform hover:scale-105 text-lg">
             Explore
           </button>
-          </Link>
+          </a>
         </div>
       </div>
+      
       
       <div className="absolute bottom-8 w-full flex justify-center">
         <div className="flex space-x-6">
@@ -81,6 +83,9 @@ const HomePage = () => {
         </div>
       </div>
     </div>
+    {/* Render About section below homepage */}
+    <About />
+    </>
   );
 };
 

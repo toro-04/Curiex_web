@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { Code } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 const NavBar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,26 +17,40 @@ const NavBar: React.FC = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>,id:string)=>{
+    e.preventDefault();
+    const element = document.querySelector(id);
+    if(element){
+      if(isMenuOpen) setIsMenuOpen(false);
+      window.scrollTo({
+        top:element.getBoundingClientRect().top + window.pageYOffset - 100,
+        behavior:'smooth'
+      });
+    }
+  };
 
   return (
     <nav className={`sticky top-0 z-50 transition-all duration-300 ${scrolled ? 'py-2' : 'py-4'}`}>
       <div className="max-w-full  px-4 ">
-        <div className={`${scrolled ? 'bg-black/80' : 'bg-black'} backdrop-blur-lg  rounded-3xl shadow-lg `}>
+        <div className={` rounded-3xl shadow-lg `}>
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center justify-between px-6 py-3">
             <div className="flex items-center space-x-3">
               <Code className="text-[#A4B5C4]" size={24} />
-              <a href="#home" className="text-xl font-bold text-[#CDD5DB]">CURIEX</a>
+              <a href="#home" onClick={(e) => scrollToSection(e, '#home')}  className="text-xl font-bold text-[#CDD5DB]">CURIEX</a>
             </div>
             
             <div className="flex items-center space-x-8">
-              <Link to="/" className="text-[#CDD5DB] hover:text-white transition duration-300 border-b-2 border-transparent hover:border-[#4B6382]">
+              <a href="#home" onClick={(e) => scrollToSection(e, '#home')} className="text-[#CDD5DB] hover:text-white transition duration-300 border-b-2 border-transparent hover:border-[#4B6382]">
                 Home
-              </Link>
-              <Link to="/about" className="text-[#CDD5DB] hover:text-white transition duration-300 border-b-2 border-transparent hover:border-[#4B6382]">
+              </a>
+              <a href="#about" onClick={(e) => scrollToSection(e, '#about')} className="text-[#CDD5DB] hover:text-white transition duration-300 border-b-2 border-transparent hover:border-[#4B6382]">
                 About
-              </Link>
-              <a href="#contact" className="px-4 py-2 bg-gradient-to-r from-[#071739] to-[#4B6382] text-[#CDD5DB] rounded-md hover:from-[#4B6382] hover:to-[#071739] transition-all duration-300 shadow-md">
+              </a>
+              <a href="#event" onClick={(e) => scrollToSection(e, '#event')} className="py-3 text-[#CDD5DB] hover:text-white border-b border-[#071739]/20 transition duration-300">
+                Events
+              </a>
+              <a href="#contact" onClick={(e) => scrollToSection(e, '#contact')}  className="px-4 py-2 bg-gradient-to-r from-[#071739] to-[#4B6382] text-[#CDD5DB] rounded-md hover:from-[#4B6382] hover:to-[#071739] transition-all duration-300 shadow-md">
                 Contact Us
               </a>
             </div>
@@ -72,14 +85,14 @@ const NavBar: React.FC = () => {
         {isMenuOpen && (
           <div className="md:hidden bg-black/90 backdrop-blur-md border border-[#4B6382]/30 rounded-b-lg shadow-lg mt-1 overflow-hidden">
             <div className="flex flex-col px-4 py-2">
-              <Link to="/" className="py-3 text-[#CDD5DB] hover:text-white border-b border-[#071739]/20 transition duration-300">
+              <a href="#home" className="py-3 text-[#CDD5DB] hover:text-white border-b border-[#071739]/20 transition duration-300">
                 Home
-              </Link>
-              <Link to="/about" className="py-3 text-[#CDD5DB] hover:text-white border-b border-[#071739]/20 transition duration-300">
+              </a>
+              <a href="#about" onClick={(e) => scrollToSection(e, '#about')} className="py-3 text-[#CDD5DB] hover:text-white border-b border-[#071739]/20 transition duration-300">
                 About
-              </Link>
-              <a href="#promoters" className="py-3 text-[#CDD5DB] hover:text-white border-b border-[#071739]/20 transition duration-300">
-                Promoters
+              </a>
+              <a href="#event" className="py-3 text-[#CDD5DB] hover:text-white border-b border-[#071739]/20 transition duration-300">
+                Events
               </a>
               <a href="#contact" className="my-3 py-2 bg-gradient-to-r from-[#071739] to-[#4B6382] text-[#CDD5DB] rounded-md text-center hover:opacity-90 transition duration-300">
                 Contact Us
