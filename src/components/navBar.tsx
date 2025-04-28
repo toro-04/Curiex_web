@@ -17,6 +17,17 @@ const NavBar: React.FC = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>,id:string)=>{
+    e.preventDefault();
+    const element = document.querySelector(id);
+    if(element){
+      if(isMenuOpen) setIsMenuOpen(false);
+      window.scrollTo({
+        top:element.getBoundingClientRect().top + window.pageYOffset - 100,
+        behavior:'smooth'
+      });
+    }
+  };
 
   return (
     <nav className={`sticky top-0 z-50 transition-all duration-300 ${scrolled ? 'py-2' : 'py-4'}`}>
@@ -26,20 +37,20 @@ const NavBar: React.FC = () => {
           <div className="hidden md:flex items-center justify-between px-6 py-3">
             <div className="flex items-center space-x-3">
               <Code className="text-[#A4B5C4]" size={24} />
-              <a href="#home" className="text-xl font-bold text-[#CDD5DB]">CURIEX</a>
+              <a href="#home" onClick={(e) => scrollToSection(e, '#home')}  className="text-xl font-bold text-[#CDD5DB]">CURIEX</a>
             </div>
             
             <div className="flex items-center space-x-8">
-              <a href="#home" className="text-[#CDD5DB] hover:text-white transition duration-300 border-b-2 border-transparent hover:border-[#4B6382]">
+              <a href="#home" onClick={(e) => scrollToSection(e, '#home')} className="text-[#CDD5DB] hover:text-white transition duration-300 border-b-2 border-transparent hover:border-[#4B6382]">
                 Home
               </a>
-              <a href="#aboutus" className="text-[#CDD5DB] hover:text-white transition duration-300 border-b-2 border-transparent hover:border-[#4B6382]">
+              <a href="#aboutus" onClick={(e) => scrollToSection(e, '#about')} className="text-[#CDD5DB] hover:text-white transition duration-300 border-b-2 border-transparent hover:border-[#4B6382]">
                 About
               </a>
-              <a href="#event" className="py-3 text-[#CDD5DB] hover:text-white border-b border-[#071739]/20 transition duration-300">
+              <a href="#event" onClick={(e) => scrollToSection(e, '#event')} className="py-3 text-[#CDD5DB] hover:text-white border-b border-[#071739]/20 transition duration-300">
                 Events
               </a>
-              <a href="#contact" className="px-4 py-2 bg-gradient-to-r from-[#071739] to-[#4B6382] text-[#CDD5DB] rounded-md hover:from-[#4B6382] hover:to-[#071739] transition-all duration-300 shadow-md">
+              <a href="#contact" onClick={(e) => scrollToSection(e, '#contact')}  className="px-4 py-2 bg-gradient-to-r from-[#071739] to-[#4B6382] text-[#CDD5DB] rounded-md hover:from-[#4B6382] hover:to-[#071739] transition-all duration-300 shadow-md">
                 Contact Us
               </a>
             </div>
