@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "homepage": "https://curiex_web",
+  "homepage": "https://toro-04.github.io/Curiex_web/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
