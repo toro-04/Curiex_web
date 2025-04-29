@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import About from './about';
 
 const quotes = [
   "Code is like humor. When you have to explain it, it's bad.",
@@ -83,9 +82,6 @@ const HomePage = () => {
         </div>
       </div>
     </div>
-    {/* Render About section below homepage */}
-    <About />
-    </>
   );
 };
 

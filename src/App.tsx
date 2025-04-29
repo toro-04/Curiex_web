@@ -12,6 +12,7 @@ function App() {
     <div className="noOverFlowH black" >
       <NavBar/>
       <HomePage/>
+      <About/>
       <EventsPage/>
       <ContactPage/>
     </div>

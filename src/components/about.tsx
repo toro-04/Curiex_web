@@ -18,19 +18,19 @@ const About: React.FC = () => {
     {
       name: "Mr PD Sharma",
       position: "Head of Department",
-      imageUrl: "Imagefacultyandteam/PDs.png",
+      imageUrl: "./PDs.png",
       description: "Head of the Computer Science Department, guiding students towards excellence."
     },
     {
       name: "Miss Sakeena Shahid",
       position: "Faculty Advisor",
-      imageUrl: "Imagefacultyandteam/sakeena ma'am.png",
+      imageUrl: "./sakeena ma'am.png",
       description: "A dedicated faculty member, passionate about mentoring students in their projects."
     },
     {
       name:" Dr Shefali Gupta",
       position:"Faculty Advisor",
-      imageUrl:"Imagefacultyandteam/shefali ma'am.png",
+      imageUrl:"./shefali ma'am.png",
       description: "An experienced faculty member, committed to fostering innovation and creativity."
     }
   ];
@@ -39,57 +39,57 @@ const About: React.FC = () => {
     {
       name: "Gurlive Singh",
       position: "President",
-      imageUrl: "Imagefacultyandteam/gurlive.png",
+      imageUrl: "./gurlive.png",
       
     },
     {
       name: "Anshpreet Singh",
       position: "Vice President",
-      imageUrl: "Imagefacultyandteam/ansh.png",
+      imageUrl: "./ansh.png",
       
     },
     {
       name: "Anjali Gupta",
       position: "General Secretary",
-      imageUrl: "Imagefacultyandteam/anjali.png",
+      imageUrl: "./anjali.png",
       
     },
     {
       name:"Tanubhav Juneja",
       position:"Treasurer",
-      imageUrl:"Imagefacultyandteam/tanubhav.png",
+      imageUrl:"./tanubhav.png",
     },
     {
       name:"Prathit Visen",
       position:"Council member",
-      imageUrl:"Imagefacultyandteam/prathit.png",
+      imageUrl:"./prathit.png",
       
     },
     
     {
       name:"Rahul Kumar Keshri",
       position:"Council member",
-      imageUrl:"Imagefacultyandteam/rahulkumarkeshari.png",
+      imageUrl:"./rahulkumarkeshari.png",
     },
     {
       name:"Dhruv Nailwal",
       position:"Council member",
-      imageUrl:"Imagefacultyandteam/dhruv.png",
+      imageUrl:"./dhruv.png",
     },
     {
       name:"Naman Lakhina",
       position:"Council member",
-      imageUrl:"Imagefacultyandteam/Naman.png",
+      imageUrl:"./Naman.png",
     },
     {
       name:"Kanishk Chauhan",
       position:"Council member",
-      imageUrl:"Imagefacultyandteam/Kanishk.png",
+      imageUrl:"./Kanishk.png",
     },
     {
       name:"Jaspreet Singh Dogra",
       position:"Council member",
-      imageUrl:"Imagefacultyandteam/jaspreet.png", 
+      imageUrl:"./jaspreet.png", 
     } 
   ];
 
@@ -109,7 +109,7 @@ const About: React.FC = () => {
           {societyInfo.description}
         </p>
         
-        <h2 className="text-4xl font-bold font-mono bg-clip-text text-transparent bg-gradient-to-r from-[#5483B3] to-[#052659] mb-2 text-center font-bold mt-12">OUR MISSION</h2>
+        <h2 className="text-4xl font-mono bg-clip-text text-transparent bg-gradient-to-r from-[#5483B3] to-[#052659] mb-2 text-center font-bold mt-12">OUR MISSION</h2>
         <p className="text-gray-200 text-lg text-center">{societyInfo.mission}</p>
       </div>
 
