@@ -43,7 +43,7 @@ const NavBar: React.FC = () => {
               <a href="#home" onClick={(e) => scrollToSection(e, '#home')} className="text-[#CDD5DB] hover:text-white transition duration-300 border-b-2 border-transparent hover:border-[#4B6382]">
                 Home
               </a>
-              <a href="#aboutus" onClick={(e) => scrollToSection(e, '#about')} className="text-[#CDD5DB] hover:text-white transition duration-300 border-b-2 border-transparent hover:border-[#4B6382]">
+              <a href="#about" onClick={(e) => scrollToSection(e, '#about')} className="text-[#CDD5DB] hover:text-white transition duration-300 border-b-2 border-transparent hover:border-[#4B6382]">
                 About
               </a>
               <a href="#event" onClick={(e) => scrollToSection(e, '#event')} className="py-3 text-[#CDD5DB] hover:text-white border-b border-[#071739]/20 transition duration-300">
