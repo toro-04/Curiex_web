@@ -28,7 +28,7 @@ const ContactPage = () => {
         <ul className="space-y-2">
           <li><a href="#home" className="hover:text-[#A4B5C4] transition-colors">Home</a></li>
           <li><a href="#about" className="hover:text-[#A4B5C4] transition-colors">About</a></li>
-          <li><a href="#events" className="hover:text-[#A4B5C4] transition-colors">Events</a></li>
+          <li><a href="#event" className="hover:text-[#A4B5C4] transition-colors">Events</a></li>
           <li><a href="#projects" className="hover:text-[#A4B5C4] transition-colors">Projects</a></li>
           <li><a href="#team" className="hover:text-[#A4B5C4] transition-colors">Our Team</a></li>
         </ul>
