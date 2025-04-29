@@ -13,24 +13,27 @@ interface SocietyInfo {
   mission: string;
 }
 
+// The base URL for GitHub Pages deployment
+const baseUrl = import.meta.env.BASE_URL || '';
+
 const About: React.FC = () => {
   const facultyMembers: MemberProps[] = [
     {
       name: "Mr PD Sharma",
       position: "Head of Department",
-      imageUrl: "./PDs.png",
+      imageUrl: `${baseUrl}/PDs.png`,
       description: "Head of the Computer Science Department, guiding students towards excellence."
     },
     {
       name: "Miss Sakeena Shahid",
       position: "Faculty Advisor",
-      imageUrl: "./sakeena ma'am.png",
+      imageUrl: `${baseUrl}/sakeenama'am.png`,
       description: "A dedicated faculty member, passionate about mentoring students in their projects."
     },
     {
       name:" Dr Shefali Gupta",
       position:"Faculty Advisor",
-      imageUrl:"./shefali ma'am.png",
+      imageUrl: `${baseUrl}/shefalima'am.png`,
       description: "An experienced faculty member, committed to fostering innovation and creativity."
     }
   ];
@@ -39,57 +42,57 @@ const About: React.FC = () => {
     {
       name: "Gurlive Singh",
       position: "President",
-      imageUrl: "./gurlive.png",
+      imageUrl: `${baseUrl}/gurlive.png`,
       
     },
     {
       name: "Anshpreet Singh",
       position: "Vice President",
-      imageUrl: "./ansh.png",
+      imageUrl: `${baseUrl}/ansh.png`,
       
     },
     {
       name: "Anjali Gupta",
       position: "General Secretary",
-      imageUrl: "./anjali.png",
+      imageUrl: `${baseUrl}/anjali.png`,
       
     },
     {
       name:"Tanubhav Juneja",
       position:"Treasurer",
-      imageUrl:"./tanubhav.png",
+      imageUrl: `${baseUrl}/tanubhav.png`,
     },
     {
       name:"Prathit Visen",
       position:"Council member",
-      imageUrl:"./prathit.png",
+      imageUrl: `${baseUrl}/prathit.png`,
       
     },
     
     {
       name:"Rahul Kumar Keshri",
       position:"Council member",
-      imageUrl:"./rahulkumarkeshari.png",
+      imageUrl: `${baseUrl}/rahulkumarkeshari.png`,
     },
     {
       name:"Dhruv Nailwal",
       position:"Council member",
-      imageUrl:"./dhruv.png",
+      imageUrl: `${baseUrl}/Dhruv.png`,
     },
     {
       name:"Naman Lakhina",
       position:"Council member",
-      imageUrl:"./Naman.png",
+      imageUrl: `${baseUrl}/Naman.png`,
     },
     {
       name:"Kanishk Chauhan",
       position:"Council member",
-      imageUrl:"./Kanishk.png",
+      imageUrl: `${baseUrl}/Kanishk.png`,
     },
     {
       name:"Jaspreet Singh Dogra",
       position:"Council member",
-      imageUrl:"./jaspreet.png", 
+      imageUrl: `${baseUrl}/jaspreet.png`,
     } 
   ];
 
@@ -166,4 +169,3 @@ const About: React.FC = () => {
 };
 
 export default About;
-
