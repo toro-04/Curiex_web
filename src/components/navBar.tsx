@@ -23,7 +23,6 @@ const NavBar: React.FC = () => {
     if(element){
       if(isMenuOpen) setIsMenuOpen(false);
       window.scrollTo({
-        top:element.getBoundingClientRect().top + window.pageYOffset - 100,
         behavior:'smooth'
       });
     }
@@ -88,7 +87,7 @@ const NavBar: React.FC = () => {
               <a href="#home" className="py-3 text-[#CDD5DB] hover:text-white border-b border-[#071739]/20 transition duration-300">
                 Home
               </a>
-              <a href="#aboutus" className="py-3 text-[#CDD5DB] hover:text-white border-b border-[#071739]/20 transition duration-300">
+              <a href="#about" onClick={(e) => scrollToSection(e, '#about')} className="py-3 text-[#CDD5DB] hover:text-white border-b border-[#071739]/20 transition duration-300">
                 About
               </a>
               <a href="#event" className="py-3 text-[#CDD5DB] hover:text-white border-b border-[#071739]/20 transition duration-300">
